@@ -74,3 +74,4 @@ let name = prompt('Ім\'я?', 'Введіть текст');
 let name2 = prompt('По-батькові?', 'Введіть текст')
 let age = prompt('Вік?', 'Введіть число');
 console.log(`${name} ${name2}. ${age} роки`);
+
