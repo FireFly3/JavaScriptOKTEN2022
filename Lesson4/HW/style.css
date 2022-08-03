@@ -1,0 +1,17 @@
+.product-card {
+    height: 300px;
+    width: 300px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    color: #941e1e;
+}
+
+img {
+    height: 200px;
+}
