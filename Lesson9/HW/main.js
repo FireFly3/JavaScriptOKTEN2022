@@ -268,8 +268,56 @@ button.onclick = function () {
 
 //     - створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку зчитати інформацію
 //     з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
-//
-//
+
+let form = document.createElement('form');
+
+let input = document.createElement('input');
+input.setAttribute('type', 'number');
+
+let button1 = document.createElement('button');
+button1.innerText = 'Подтвердить';
+
+form.append(input, button1);
+document.body.append(form);
+
+form.onsubmit = function (e) {
+    e.preventDefault();
+    if (input.value < 18) {
+        console.log('small age');
+    } else {
+        console.log('Welcome');
+    }
+}
+
 // *** Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 // (Додаткова частина для завдання)
+
+let form1 = document.createElement('form');
+let input1 = document.createElement('input');
+let input2 = document.createElement('input');
+let input3 = document.createElement('input');
+let btn = document.createElement('button');
+btn.innerText = 'Create';
+input1.setAttribute('type', 'number');
+input2.setAttribute('type', 'number');
+input3.setAttribute('type', 'text');
+
+form.append(input1, input2, input3);
+document.body.append(form, btn);
+
+btn.onclick = function (e) {
+    e.preventDefault();
+    let table = document.createElement('table');
+
+    for (let i = 0; i < input1.value; i++) {
+        let a = document.createElement('tr');
+        for (let j = 0; j < input2.value; j++) {
+            let b = document.createElement('td');
+            b.innerText = input3.value;
+            a.append(b);
+        }
+        table.append(a);
+    }
+    document.body.appendChild(table);
+}
