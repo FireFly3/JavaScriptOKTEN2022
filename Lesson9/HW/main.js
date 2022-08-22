@@ -253,6 +253,17 @@ for (const value of coursesAndDurationArray) {
 //     зникав елемент з id="text".
 
 let id = document.createElement('div');
+id.classList.add('text')
+id.innerText = 'text';
+document.body.append(id)
+
+let button = document.createElement('button');
+button.innerText = 'button';
+document.body.append(button)
+
+button.onclick = function () {
+    id.style.visibility = 'hidden';
+};
 
 
 //     - створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні на кнопку зчитати інформацію
