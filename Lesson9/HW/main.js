@@ -303,8 +303,8 @@ input1.setAttribute('type', 'number');
 input2.setAttribute('type', 'number');
 input3.setAttribute('type', 'text');
 
-form.append(input1, input2, input3);
-document.body.append(form, btn);
+form1.append(input1, input2, input3);
+document.body.append(form1, btn);
 
 btn.onclick = function (e) {
     e.preventDefault();
