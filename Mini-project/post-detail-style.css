@@ -1,0 +1,38 @@
+.screen {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+}
+
+.bigBox {
+    background-color: aliceblue;
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.postBox {
+    display: flex;
+    width: 1200px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-top: 20px;
+}
+
+.post-box {
+    background-color: rgba(205, 209, 213, 0.33);
+    border: 1px solid black;
+    width: 280px;
+    border-radius: 5px;
+    height: 250px;
+    text-align: center;
+    padding: 5px;
+}
+
